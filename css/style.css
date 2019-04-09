@@ -1,0 +1,41 @@
+.container {
+    width: 1280px;
+    font-family: sans-serif;
+    background-color: white;
+}
+
+.logo {
+    font-size: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    padding-left: 2px;
+    margin: 61px auto 45px auto;
+}
+
+.accent {
+    color: #4bcaff;
+}
+
+.top-menu ul {
+    margin: 0 0 51px;
+    padding: 26px 15% 21px;
+    list-style-type: none;
+    background-color: #35444f; 
+}
+
+.top-menu ul li {
+    display: inline-block;
+    margin-right: 42px;
+    /* box-sizing border for accent? */
+}
+
+.mlast {
+    margin-right: 0;
+    margin-left: 43px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 24px;
+    color: white;    
+  }
