@@ -12,7 +12,7 @@
     line-height: 1;
     color: black;
     padding-left: 2px;
-    margin: 61px auto 45px auto;
+    margin: 60px auto 45px auto;
 }
 
 .logo-link {
@@ -26,7 +26,17 @@
 .top-menu {
     padding: 26px 200px 21px;
     background-color: #35444f; 
-    margin: 0 0 51px;
+    margin: 0 0 50px;
+}
+
+.left-menu {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    width: 344px;
+    border: 1px solid black;
+    margin-right: 50px;
+    line-height: 0.63;
 }
 
 .top-menu ul {
@@ -36,10 +46,22 @@
     text-align-last: justify;
 }
 
+.left-menu ul {
+    padding-left: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
 .top-menu ul li {
     display: inline-block;
     margin-right: 42px;
     /* box-sizing border for accent? */
+}
+
+.left-menu ul li {
+    display: inline-block;
+    padding: 30px 0 30px 42px;
+    width: 300px;
 }
 
 .top-menu ul li:last-child {
@@ -53,6 +75,78 @@
     color: white;    
 }
 
+.left-nav-link {
+    text-decoration: none;
+    font-size: 30px;
+    color: #485863;
+    line-height: 1;
+}
+
+.picture-block {
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 880px;
+    height: 529px;
+    border: 1px solid black;
+    padding: 73px 0 73px 0;
+    margin-bottom: 50px;
+}
+
+.text-block {
+    box-sizing: border-box;
+    width: 885px;
+    padding: 0 40px 0 30px;
+    margin: 0 0 50px auto;
+    font-size: 18px;
+    color: #2c2c2c;
+}
+
+.text-block p {
+    margin: 0 0 30px;
+}
+
+.text-block p:last-child {
+    margin: 0;
+}
+
+.footer-menu {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #b4b7ba;
+    padding: 22px 0 22px 44px;
+    margin-bottom: 30px;
+}
+
+.footer-menu ul{
+    display: inline-block;
+    padding-left: 0;
+    list-style-type: none;
+    margin: 0 200px 0 0;
+    width: 809px;
+}
+
+.footer-menu ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.footer-menu ul li:last-child {
+    margin: 0;
+}
+
+.footer-menu p {
+    display: inline-block;
+    margin: 0 30px 0 0;
+    font-size: 24px;
+}
+
+.bottom-nav-link {
+    text-decoration: none;
+    color: rgba(12, 25, 39, 255);
+    font-size: 26px;
+}
 /* debugging css */
 /* * { outline: 2px dotted red }
 * * { outline: 2px dotted green }
