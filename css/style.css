@@ -5,7 +5,9 @@
     margin: 0 auto;
 }
 
-.logo {
+.logo-link {
+    display: block;
+    text-decoration: none;
     font-size: 80px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
@@ -15,14 +17,6 @@
     margin: 60px auto 45px auto;
 }
 
-.logo-link {
-    text-decoration: none;
-}
-
-.accent {
-    color: #4bcaff;
-}
-
 .top-menu {
     padding: 26px 200px 21px;
     background-color: #35444f; 
@@ -30,20 +24,17 @@
 }
 
 .left-menu {
-    display: inline-block;
     box-sizing: border-box;
-    vertical-align: top;
     width: 344px;
     border: 1px solid black;
-    margin-right: 50px;
     line-height: 0.63;
+    float: left;
 }
 
 .top-menu ul {
     padding-left: 0;
     list-style-type: none;
     margin: 0;
-    text-align-last: justify;
 }
 
 .left-menu ul {
@@ -55,7 +46,6 @@
 .top-menu ul li {
     display: inline-block;
     margin-right: 42px;
-    /* box-sizing border for accent? */
 }
 
 .left-menu ul li {
@@ -84,7 +74,7 @@
 
 .picture-block {
     box-sizing: border-box;
-    display: inline-block;
+    float: right;
     text-align: center;
     vertical-align: top;
     width: 880px;
@@ -120,10 +110,9 @@
 }
 
 .footer-menu ul{
-    display: inline-block;
+    float: left;
     padding-left: 0;
     list-style-type: none;
-    margin: 0 200px 0 0;
     width: 809px;
 }
 
@@ -137,8 +126,8 @@
 }
 
 .footer-menu p {
-    display: inline-block;
-    margin: 0 30px 0 0;
+    float: right;
+    margin-right: 30px;
     font-size: 24px;
 }
 
@@ -146,6 +135,16 @@
     text-decoration: none;
     color: rgba(12, 25, 39, 255);
     font-size: 26px;
+}
+
+.accent {
+    color: #4bcaff;
+}
+
+.clearfix::after { 
+    content: "";
+    display: block; 
+    clear: both;
 }
 /* debugging css */
 /* * { outline: 2px dotted red }
