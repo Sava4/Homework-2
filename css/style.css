@@ -30,17 +30,24 @@
 }
 
 .top-menu ul li {
-    box-sizing: border-box;
-    padding: 26px 41px;
     display: inline-block;
-    transition: background-color 0.3s;
 }
 
-.top-menu ul li:hover {
-    background-color: #222f3a;
+.nav-link {
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
     padding: 26px 40px;
-    border-right: 1px solid white;
-    border-left: 1px solid white;    
+    display: inline-block;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #222f3a;
+    border-left-color: white;
+    border-right-color: white; 
 }
 
 .left-menu {
@@ -50,7 +57,7 @@
     border: 1px solid black;
     line-height: 0.63;
     text-align: left;
-    margin-right: 51px;
+    margin-right: 46px;
 }
 
 .left-menu ul {
@@ -60,39 +67,34 @@
 }
 
 .left-menu ul li {
-    box-sizing: border-box;
     display: inline-block;
-    padding: 30px 0 30px 42px;
     width: 100%;
+}
+
+.left-nav-link {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 30px 0 30px 42px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 30px;
     color: #485863;
+    line-height: 1;
     transition: all 0.3s;
 }
 
-.left-menu ul li:hover {
+.left-nav-link:hover {
     background-color: #dbdbdb;
     padding-left: 69px;
     color: #000;
 } 
-
-.left-nav-link {
-    text-decoration: none;
-    font-size: 30px;
-    line-height: 1;
-    color: unset;
-}
-
-.nav-link {
-    text-decoration: none;
-    font-size: 24px;
-    color: white;    
-}
 
 .picture-block {
     box-sizing: border-box;
     text-align: center;
     display: inline-block;
     vertical-align: top;
-    width: 880px;
+    width: 885px;
     height: 529px;
     border: 1px solid black;
     padding: 73px 0 73px 0;
